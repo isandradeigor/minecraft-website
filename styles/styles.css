@@ -278,6 +278,33 @@ footer {
 
 /* Media Query para dispositivos móveis */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .logo {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav ul li {
+        text-align: left;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+    
     .content-section {
         flex-direction: column;
         align-items: flex-start;
