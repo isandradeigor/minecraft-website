@@ -26,14 +26,21 @@
     </header>
 
     <section class="main-section">
-        <h1 class="main-title">Skins do Minecraft</h1>
-        <h2 class="search-title">Pesquisar Usuário</h2>
-        <div class="search-container">
-            <input type="text" id="username" placeholder="Nome de usuário do Minecraft">
-            <button id="loadSkin">Carregar Skin</button>
+        <div class="content-container">
+            <div class="text-container">
+                <h1 class="main-title">Skins do Minecraft</h1>
+                <h2 class="search-title">Pesquisar Usuário</h2>
+                <div class="search-container">
+                    <input type="text" id="username" placeholder="Nome de usuário do Minecraft">
+                    <button id="loadSkin">Carregar Skin</button>
+                </div>
+            </div>
         </div>
-        <img id="skin" src="" alt="Skin do Minecraft" class="skin-image" style="display:none;">
+        <div class="image-container">
+            <img id="skin" src="https://mc-heads.net/head/steve" alt="Skin do Minecraft" class="skin-image">
+        </div>
     </section>
+
 
     <footer>
         <div class="footer-container">
@@ -72,7 +79,6 @@
             const skinUrl = `https://mc-heads.net/head/${username}`;
             const skinImage = document.getElementById('skin');
             skinImage.src = skinUrl;
-            skinImage.style.display = 'block';
         }
     </script>
 </body>
