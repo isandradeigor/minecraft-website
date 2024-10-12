@@ -39,6 +39,7 @@ header {
 nav ul {
     list-style-type: none;
     display: flex;
+    align-items: center; /* Garante que os itens do menu fiquem alinhados verticalmente */
     gap: 20px;
     margin: 10px;
 }
@@ -49,9 +50,16 @@ nav ul li a {
     text-decoration: none;
     font-size: 15px;
     padding-bottom: 5px;
+    display: flex;
+    align-items: center; /* Alinha o conteúdo verticalmente, incluindo a imagem */
 }
 
-nav ul li a::after {
+/* Animação de sublinhado para os links, exceto o perfil */
+nav ul li a:not(.profile) {
+    position: relative;
+}
+
+nav ul li a:not(.profile)::after {
     content: '';
     position: absolute;
     left: 0;
@@ -62,9 +70,31 @@ nav ul li a::after {
     transition: width 0.3s ease;
 }
 
-nav ul li a:hover::after {
+nav ul li a:not(.profile):hover::after {
     width: 100%;
 }
+
+/* Estilos para a imagem do perfil */
+.profile-icon {
+    height: 40px;
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: aliceblue;
+    border-radius: 10%; /* Adiciona bordas arredondadas se necessário */
+}
+
+.profile-icon:hover {
+    transform: scale(1.25); /* Aumenta a imagem ao passar o mouse */
+}
+
+/* Remove a animação de sublinhado do perfil */
+nav ul li a.profile {
+    padding-bottom: 0; /* Remove o espaço extra que o sublinhado teria ocupado */
+}
+
+
+
 
 .main-section {
     position: relative;
