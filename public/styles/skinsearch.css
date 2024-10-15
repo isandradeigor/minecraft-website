@@ -59,6 +59,10 @@ nav ul li a {
     align-items: center; /* Alinha o conteúdo verticalmente, incluindo a imagem */
 }
 
+nav ul li a:hover {
+    color: #4EAF4D;
+}
+
 /* Animação de sublinhado para os links, exceto o perfil */
 nav ul li a:not(.profile) {
     position: relative;
@@ -71,7 +75,7 @@ nav ul li a:not(.profile)::after {
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: white;
+    background-color: #4EAF4D;
     transition: width 0.3s ease;
 }
 
@@ -110,7 +114,6 @@ nav ul li a.profile {
 }
 
 .main-section {
-    position: relative;
     background-color: #f9f9f9; /* Um cinza claro para um fundo mais suave */
     height: auto; /* Permite que a altura se ajuste ao conteúdo */
     padding: 40px 80px; /* Mais espaço no topo e na parte inferior */
@@ -118,7 +121,14 @@ nav ul li a.profile {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve para profundidade */
     display: flex; /* Adiciona flexbox à seção principal */
     flex-direction: row; /* Organiza o conteúdo em linha */
-    align-items: flex-start; /* Alinha os itens no topo */
+    align-items: center; /* Alinha os itens no topo */
+    justify-content: center;
+}
+
+.main-container-skin {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .content-container {

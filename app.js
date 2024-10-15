@@ -16,6 +16,14 @@ app.get('/skin', (req, res) => {
     res.sendFile(`${publicPath}/pages/skinsearch.html`)
 });
 
+app.get('/profile', (req, res) => {
+    res.sendFile(`${publicPath}/pages/profile.html`)
+});
+
+app.get('/terceira', (req, res) => {
+    res.send("Terceira Rota!")
+});
+
 app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
 });

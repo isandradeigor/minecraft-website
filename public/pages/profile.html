@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft Skins</title>
-    <link rel="stylesheet" href="/styles/skinsearch.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/profile.css">
 </head>
 
 <body>
@@ -28,23 +28,30 @@
         </nav>
     </header>
 
+
+    <!--Main Section-->
     <section class="main-section">
-        <div class="main-container-skin">
-            <div class="content-container">
-                <div class="text-container">
-                    <h1 class="main-title">Skins do Minecraft</h1>
-                    <h2 class="search-title">Pesquisar Usuário</h2>
-                    <div class="search-container">
-                        <input type="text" id="username" placeholder="Nome de usuário do Minecraft">
-                        <button id="loadSkin">Carregar Skin</button>
-                    </div>
-                </div>
-            </div>
-            <div class="image-container">
-                <img id="skin" src="https://mc-heads.net/head/steve" alt="Skin do Minecraft" class="skin-image">
+        <div class="container-avatar">
+            <h1>Selecione um Avatar</h1>
+            <h2>Escolha um Avatar para por no perfil:</h2>
+            <div class = "container-avatar-blocos">
+                <div class="bloco" style="background-image: url('/imagens/Minecraft Avatar/steve-icon-minecraft.jpg');"></div>
+                <div class="bloco" style="background-image: url('/imagens/Minecraft Avatar/alex-icon-minecraft.jpg');"></div>
+                <div class="bloco" style="background-image: url('/imagens/Minecraft Avatar/slime-icon-minecraft.jpg');"></div>
+                <div class="bloco" style="background-image: url('/imagens/Minecraft Avatar/sheep-icon-minecraft.jpg');"></div>
+                <div class="bloco" style="background-image: url('/imagens/Minecraft Avatar/zombie-icon-minecraft.jpg');"></div>
+
+
+                <div class="bloco" style="background-image: url('/imagens/Minecraft Avatar/villager-icon-minecraft.jpg');"></div>
+                <div class="bloco" style="background-image: url('/imagens/Minecraft Avatar/mushroom-cow-icon-minecraft.jpg');"></div>
+                <div class="bloco" style="background-image: url('/imagens/Minecraft Avatar/pig-icon-minecraft.jpg');"></div>
+                <div class="bloco" style="background-image: url('/imagens/Minecraft Avatar/bee-icon-minecraft.jpg');"></div>
+                <div class="bloco" style="background-image: url('/imagens/Minecraft Avatar/black-skeleton-icon-minecraft.jpg');"></div>
+                <div class="bloco" style="background-image: url('/imagens/Minecraft Avatar/enderman-icon-minecraft.jpg');"></div>
             </div>
         </div>
     </section>
+
 
     <footer>
         <div class="footer-container">
@@ -76,15 +83,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        document.getElementById('loadSkin').onclick = function () {
-            const username = document.getElementById('username').value;
-            const skinUrl = `https://mc-heads.net/head/${username}`;
-            const skinImage = document.getElementById('skin');
-            skinImage.src = skinUrl;
-        }
-    </script>
 </body>
 
 </html>
