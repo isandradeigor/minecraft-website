@@ -1,6 +1,8 @@
 const express = require('express');
 const path = require('path');
 
+const login = "";
+
 const app = express();
 const PORT = 3000;
 
@@ -17,7 +19,7 @@ app.get('/skin', (req, res) => {
 });
 
 app.get('/profile', (req, res) => {
-    res.sendFile(`${publicPath}/pages/profile.html`)
+    res.sendFile(`${publicPath}/pages/profile.html`) 
 });
 
 app.get('/terceira', (req, res) => {

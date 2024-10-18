@@ -133,7 +133,34 @@ nav ul li a.profile {
     background-color: white;
     height: auto;
     padding: 70px;
+    flex-direction: column;
 }
+
+.container-profile {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.container-profile h1 {
+    display: flex;
+    justify-content:flex-start;
+    margin-bottom: 15px;
+    font-size: 36px;
+    text-align: left;
+    color: #333;
+}
+
+.container-profile h2 {
+    display: flex;
+    justify-content:flex-start;
+    font-size: 24px; /* Tamanho do título de pesquisa */
+    margin-bottom: 40px; /* Espaçamento abaixo do título de pesquisa */
+    text-align: left; /* Alinha à esquerda */
+    color: #555;
+}
+
 
 .container-avatar {
     display: flex;
