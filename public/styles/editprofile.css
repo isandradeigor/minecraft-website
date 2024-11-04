@@ -87,6 +87,23 @@ nav ul li a:not(.profile):hover::after {
     width: 100%;
 }
 
+.atual-profile {
+    height: 100px;
+    width: 100%;
+    background-color: #c1c1c1;
+    padding: 20px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.atual-profile-image {
+    height: 10px;
+    width: ;
+}
+
 /* Estilos para a imagem do perfil */
 .profile-icon {
     height: 40px;
@@ -138,14 +155,14 @@ nav ul li a.profile {
 
 .container-profile {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
     max-width: 70%;
 }
 
 .container-profile h1 {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     margin-bottom: 15px;
     font-size: 36px;
     text-align: left;
@@ -154,24 +171,27 @@ nav ul li a.profile {
 
 .container-profile h2 {
     display: flex;
-    justify-content:flex-start;
-    font-size: 24px; /* Tamanho do título de pesquisa */
-    margin-bottom: 40px; /* Espaçamento abaixo do título de pesquisa */
-    text-align: left; /* Alinha à esquerda */
+    justify-content: flex-start;
+    font-size: 24px;
+    /* Tamanho do título de pesquisa */
+    margin-bottom: 40px;
+    /* Espaçamento abaixo do título de pesquisa */
+    text-align: left;
+    /* Alinha à esquerda */
     color: #555;
 }
 
 
 .container-avatar {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
     max-width: 70%;
 }
 
 .container-avatar h1 {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     margin-bottom: 15px;
     font-size: 36px;
     text-align: left;
@@ -180,16 +200,19 @@ nav ul li a.profile {
 
 .container-avatar h2 {
     display: flex;
-    justify-content:flex-start;
-    font-size: 24px; /* Tamanho do título de pesquisa */
-    margin-bottom: 40px; /* Espaçamento abaixo do título de pesquisa */
-    text-align: left; /* Alinha à esquerda */
+    justify-content: flex-start;
+    font-size: 24px;
+    /* Tamanho do título de pesquisa */
+    margin-bottom: 40px;
+    /* Espaçamento abaixo do título de pesquisa */
+    text-align: left;
+    /* Alinha à esquerda */
     color: #555;
 }
 
 .container-avatar-blocos {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 20px;
 }
